@@ -1,4 +1,18 @@
 /**index.wxss**/
+view{
+  border: 1px solid antiquewhite;
+}
+.NavBar{
+  display: flex;
+  margin-top: 0rpx;
+  height: 50rpx;
+  width: 100%;
+  background-color: #adc;
+}
+.test{
+  font-size: 50rpx;
+  line-height: 50rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -13,13 +27,24 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: #aaddcc;
 }
 
 .usermotto {
   margin-top: 20px;
 }
-
+.pageJump{
+  width: 100%;
+}
+.jumpMenu{
+  float: left;
+}
+.jumpInfo{
+  float: right;
+}
+.menu{
+  width: 100%;
+}
 .bgimg {
   margin-top: 20px;
 }

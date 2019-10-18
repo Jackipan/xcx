@@ -1,0 +1,9 @@
+/* map.wxss */
+.mapPage{
+  height: 50%;
+  border: 1px solid saddlebrown;
+}
+.cat{
+  width: 300px;
+  border: 1px solid saddlebrown;
+}

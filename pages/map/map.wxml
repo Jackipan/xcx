@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="mapPage">
+    <map show-location="22.6849288145,113.7864682869"></map>
+  </view>
+  <view>
+    <!-- <image src="http://127.0.0.1:8080/static/menu.jpg"></image> -->
+    <cover-image class="cat" src="../img/cat.jpeg"></cover-image>
+  </view>
+</view>

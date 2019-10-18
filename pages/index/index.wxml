@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="NavBar">
+    <button class="test" bindtap="test">test</button>
+  </view>
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -11,11 +14,21 @@
     <text class="user-motto">{{motto}}</text>
     <button bindtap='tel'>拨号</button>
     <button bindtap='num'>保存我的电话</button>
-    
-    <!-- <br> -->
+    <view class="pageJump">
+      <span bindtap="gotoMenu" class="jumpMenu">{{textMenu}}</span>
+      <span bindtap="gotoNext" class="jumpInfo">下一页</span>
+    </view>
   </view>
-  <view class='bgimg'>
-    <image src='../index/jietu1.jpg' alt="图片丢失"></image>
+
+  <!-- <text class='up' bindtap='showRule'>点击弹出</text>
+  <view class="float {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+    <view class='floatContent'>
+      我是内容
+      <image src='../img/cat.jpeg' class='ruleHide' bindtap='hideRule'>X</image>
+    </view>
+  </view> -->
+
+  <view class='bgimg' wx:if="{{isRuleShow}}" >
+    <image src='../img/cat.jpeg' alt="图片丢失"></image>
   </view>
 </view>
-
